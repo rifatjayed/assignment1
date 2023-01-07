@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Work Sans', sans-serif;
+    box-sizing: border-box;
 }
 
 header {
@@ -56,9 +57,7 @@ header {
     margin: 0 190px;
 }
 
-.failures-section-left {}
 
-.failures-section-right {}
 
 .section-title {
     font-weight: 700;
@@ -97,7 +96,6 @@ header {
 
 }
 
-.section-title {}
 
 .plans-items {
     display: flex;
@@ -105,13 +103,8 @@ header {
     text-align: center;
     gap: 85px;
     margin-top: 50px;
-    margin-bottom: 125px;
+
 }
-
-.item {}
-
-.item-img {}
-
 .item-title {
     color: #151414;
     font-weight: 700;
@@ -127,23 +120,65 @@ header {
 
 }
 
+/* my-work-section */
+
+.my-work-section {
+    margin: 120px 150px;
+}
+
+.my-work-section .section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.work-items-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.work-items {
+    margin: 0 15px;
+}
+
+.works-img {
+    text-align: center;
+}
+
+.works-img img {
+
+    width: 70px;
+}
+
+.works-title {
+    color: #151414;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    margin: 25px 0;
+}
+
+
+.works-description {
+    color: #737272;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+}
+
 /* positive-section */
 
 .positive-section {
-    /* margin: 0 230px; */
-    background-image: url("images/watch.png");
-    width: 100%;
-    height: 300px;
-    background-size: cover;
-    background-repeat: no-repeat;
+    margin: 0px 230px;
 }
 
 .bg {
 
     background-image: linear-gradient(to left, rgba(255, 0, 0, 0), rgba(255, 0, 0, 1));
     height: 300px;
-   
-    
+
+
 }
 
 .call-btn {
@@ -153,10 +188,104 @@ header {
     font-weight: 600;
     font-size: 20px;
     line-height: 23px;
+    width: fit-content;
     text-align: center;
 }
-.positive-section-descrption{
+
+.positive-section-descrption {
     margin-left: 60px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
 
 
+}
+
+.positive-section-descrption .section-title {
+    color: white;
+    margin-bottom: 25px;
+}
+
+.outer-layer {
+
+    background-image: url("images/watch.png");
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+footer {
+    margin-top: 130px;
+    padding: 150px;
+    display: flex;
+    justify-content: space-between;
+    background: #151414;
+}
+
+
+.future-icon {
+    display: flex;
+
+}
+
+.future-icon p {
+    margin-right: 17px;
+
+}
+
+.footer-title {
+    color: #F8F8F8;
+    font-weight: 700;
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.footer-description {
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+.future-info {
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.footer-subscribe-title{
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 29px;
+    margin-bottom: 30px;
+    color: #FFFFFF;
+}
+.subscribe-info form{
+    display: flex;
+    flex-direction: column;
+}
+.subscribe-info .info-email{
+background-color: #151414;
+padding: 20px;
+border:1px solid white;
+box-sizing: border-box;
+
+}
+.subscribe-info .info-phn{
+    
+    color: #F15B22;
+    font-weight: 600;
+    font-size: 20px;
+    border: none;
+    padding: 20px 30px;
+    margin-top: 35px;
+   
+    }
+
+.subscribe-info p button {
+    
 }
