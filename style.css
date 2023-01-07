@@ -129,23 +129,34 @@ header {
 
 /* positive-section */
 
-.positive-section{
-   /* margin: 0 230px; */
-    
-}
-.bg{
-   background-image: url("images/watch.png"), url("images/gradient2.png");
+.positive-section {
+    /* margin: 0 230px; */
+    background-image: url("images/watch.png");
     width: 100%;
     height: 300px;
     background-size: cover;
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
 }
 
-.call-btn{
+.bg {
+
+    background-image: linear-gradient(to left, rgba(255, 0, 0, 0), rgba(255, 0, 0, 1));
+    height: 300px;
+   
+    
+}
+
+.call-btn {
     color: #F15B22;
+    border: none;
     padding: 20px;
     font-weight: 600;
-font-size: 20px;
-line-height: 23px;
-text-align: center;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+}
+.positive-section-descrption{
+    margin-left: 60px;
+
+
 }
